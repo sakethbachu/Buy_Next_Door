@@ -1,1 +1,195 @@
-abc
+@font-face{
+  src:url(Nexa Light.otf);
+  font-family: "Nexa Light";
+}
+html*{
+  margin: 0;
+  padding: 0;
+  font-family: "Nexa Light";
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: #eee;
+}
+
+.wrapper{
+  width: 1000px;
+  margin: 0 auto 0 60px;
+  background: red;
+}
+
+/*footer starts here*/
+
+.footercontent{
+  width:
+  height:auto;
+  font-family: "Nexa Light";
+  background: rgb(35,31,32);
+  color: rgba(255,242,0);
+  line-height: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.classforfirsttowcolumn{
+  width: 35%;
+  display: flex;
+}
+.content.footerservices{
+  width:50%;
+  margin-left:0px;
+  padding-left: 0px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 32px;
+}
+.content.footersupport{
+  width: 50%;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 10px
+}
+.classforothertowcolumn{
+  width: 35%;
+  display: flex;
+}
+.content.footercompany{
+  width: 50%;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 30px
+}
+.content.footerourratecard{
+  width: 50%;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 30px;
+}
+.classforfirsttowcolumn{
+  height: 110%;
+}
+/*social links and their styling*/
+.footersociallinks{
+  padding-left: 2%;
+}
+.footerdownloads{
+  display: flex;
+  padding-left: 10%;
+}
+.footergoogleplay img{
+  width: 150px;
+  height: 60px;
+  margin-top: 20px;
+}
+.footerappstore img{
+  margin-top: 30px;
+}
+.footersocialmediaicons ul{
+  display: flex;
+  margin-left: 13%;
+}
+.footersocialmediaicons ul li{
+  text-decoration: none;
+  list-style: none;
+
+}
+.footersocialmediaicons ul li a{
+  color: rgba(255,242,0);
+  margin-left: 25px;
+  font-size: 25px;
+}
+
+.footersocialmediaicons ul li:nth-child(1) a:hover .fa{
+  color: #e4405f;
+}
+.footersocialmediaicons ul li:nth-child(2) a:hover .fa{
+  color: #3b5999;
+}
+.footersocialmediaicons ul li:nth-child(3) a:hover .fa{
+  color: #0077B5;
+}
+.footersocialmediaicons ul li:nth-child(4) a:hover .fa{
+  color: #dd4b39;
+}
+.footersocialmediaicons ul li:nth-child(5) a:hover .fa{
+  color: #55acee;
+}
+@media screen and (max-width: 1000px){
+  .classforfirsttowcolumn, .classforothertowcolumn{
+    flex-direction: column;
+  }
+  .footersociallinks{
+    padding: 15%;
+    padding-right: 5%;
+    padding-left: 0px;
+  }
+  .content.footerservices, .content.footersupport, .content.footercompany, .content.footerourratecard{
+    text-align: center;
+    width: 110%;
+  }
+  .classforfirsttowcolumn, .classforothertowcolumn{
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 560px){
+  .footercontent{
+    flex-direction: column;
+  }
+  .footerservices, .footersupport, .footercompany, .footerourratecard{
+    text-align: center;
+    width: 150%;
+  }
+  .footerservices, .footersupport, .footercompany, .footerourratecard{
+    font-size: 118%;
+  }
+  .classforfirsttowcolumn, .classforothertowcolumn{
+    padding: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .content.footersociallinks{
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+  }
+}
+
+
+footer{
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.landing{
+  height: 100vh;
+}
+
+
+/*this is copy right and privacy footer*/
+.footerbottom{
+  text-align: center;
+  line-height: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  background:black;
+  color: rgb(255,242,0);
+  display: flex;
+}
+.footercopyright{
+  flex: 1;
+}
+.footerprivacy{
+  flex: 1;
+}
+@media screen and (max-width: 560px){
+  .footerbottom{
+    flex-direction: column;
+  }
+}
