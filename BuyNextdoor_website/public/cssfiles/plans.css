@@ -1,0 +1,73 @@
+@font-face{
+  src:url(../fonts/NexaFreeLightwebfont.ttf);
+  font-family: "Nexa Light";
+}
+
+body, html{
+  height: 100%;
+  margin: 0;
+  font-size:16px;
+  font-family:"Nexa Light";
+  font-weight: 400;
+  line-height: 1.8em;
+  scroll-behavior: smooth;
+  background-color: RGB(35,31,32);
+}
+
+.pimg1, .pimg2{
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /*
+  fixed=parallax
+  scroll=normal
+  */
+  /*for parallax*/
+  background-attachment: fixed;
+}
+.pimg1{
+  background-image: url('../photos/planup.jpg');
+  min-height:100%;
+}
+/*fixing the image*/
+.pimg2{
+  background-image: url('../photos/plandown.jpg');
+  min-height:460px;
+}
+.ptext{
+  position: absolute;
+  top: 50%;
+  width:100%;
+  text-align: center;
+  color:#000;
+  font-size:20px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+ .border{
+  background-color: rgb(255,242,0);
+  padding:20px;
+}
+.section{
+  text-align: center;
+  padding:50px 80px;
+}
+.section h2{
+  color:rgb(254,190,16);
+  padding: 6px 2px;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+  .pimg2, .pimg1{
+    background-attachment: scroll;
+  }
+  section.section-dark{
+    padding: 0;
+  }
+}

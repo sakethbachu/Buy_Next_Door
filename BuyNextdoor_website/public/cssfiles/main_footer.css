@@ -1,0 +1,226 @@
+@font-face{
+  src:url(../fonts/NexaFreeLightwebfont.ttf);
+  font-family: "Nexa Light";
+}
+html*{
+  margin: 0;
+  padding: 0;
+  font-family: "Nexa Light";
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: #eee;
+}
+body,html{
+  scroll-behavior: smooth;
+}
+
+a{
+  cursor: pointer;
+}
+.footercontent a{
+  text-decoration: none;
+  color: rgb(255,242,0);
+}
+
+.wrapper{
+  width: 1000px;
+  margin: 0 auto 0 60px;
+  background: red;
+}
+
+/*footer starts here*/
+
+.footerprivacy a{
+  text-decoration: none;
+  color: rgb(255,242,0);
+}
+
+.footercontent{
+  width:100%;
+  height:auto;
+  font-family: "Nexa Light";
+  background: rgb(35,31,32);
+  color: rgba(255,242,0);
+  line-height: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.classforfirsttowcolumn{
+  width: 35%;
+  display: flex;
+}
+.content.footerservices{
+  width:50%;
+  margin-left:0px;
+  padding-left: 0px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 32px;
+}
+.content.footersupport{
+  width: 50%;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 10px
+}
+.classforothertowcolumn{
+  width: 35%;
+  display: flex;
+}
+.content.footercompany{
+  width: 50%;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 30px
+}
+.content.footerourratecard{
+  width: 50%;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 30px;
+}
+.classforfirsttowcolumn{
+  height: 110%;
+}
+/*social links and their styling*/
+.footersociallinks{
+  margin: 0 auto;
+}
+.footerdownloads{
+  display: flex;
+  margin: 0 auto;
+}
+.footergoogleplay img{
+  width: 150px;
+  height: 60px;
+  margin-top: 20px;
+}
+.footerappstore img{
+  margin-top: 30px;
+}
+.footersocialmediaicons ul{
+  display: flex;
+  margin: 0 auto;
+}
+.footersocialmediaicons ul li{
+  text-decoration: none;
+  list-style: none;
+}
+.footerservices h2{
+  font-size: 24px;
+}
+.footersocialmediaicons ul li a{
+  color: rgba(255,242,0);
+  margin-left: 25px;
+  font-size: 25px;
+}
+
+.footersocialmediaicons ul li:nth-child(1) a:hover .fa{
+  color: #e4405f;
+}
+.footersocialmediaicons ul li:nth-child(2) a:hover .fa{
+  color: #3b5999;
+}
+.footersocialmediaicons ul li:nth-child(3) a:hover .fa{
+  color: #0077B5;
+}
+.footersocialmediaicons ul li:nth-child(4) a:hover .fa{
+  color: #55acee;
+}
+@media screen and (max-width: 1000px){
+  .classforfirsttowcolumn, .classforothertowcolumn{
+    flex-direction: column;
+  }
+  .footersociallinks{
+    padding: 15%;
+    padding-right: 2%;
+    padding-left: 0px;
+  }
+  div.content.footersociallinks{
+    padding-bottom: 4%;
+  }
+  .content.footerservices, .content.footersupport, .content.footercompany, .content.footerourratecard{
+    text-align: center;
+    width: 100%;
+  }
+  .content.footerservices{
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+  .content.footercompany{
+    padding-bottom: 0%;
+  }
+  .classforfirsttowcolumn, .classforothertowcolumn{
+    margin-left: 5%;
+  }
+  .landinpagecontentdiv{
+    padding-top: 30%;
+    padding-left: 10%;
+  }
+}
+@media screen and (max-width: 560px){
+  .footercontent{
+    flex-direction: column;
+  }
+  .footerservices, .footersupport, .footercompany, .footerourratecard{
+    text-align: center;
+    width: 150%;
+  }
+  .footerservices, .footersupport, .footercompany, .footerourratecard{
+    font-size: 118%;
+  }
+  .classforfirsttowcolumn, .classforothertowcolumn{
+    padding: 0%;
+    padding-top: 0%;
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    padding-bottom: 2%;
+  }
+  .content.footersociallinks{
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+footer{
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.landing{
+  height: 100vh;
+}
+
+
+/*this is copy right and privacy footer*/
+.footerbottom{
+  text-align: center;
+  line-height: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  background:black;
+  color: rgb(255,242,0);
+  display: flex;
+}
+.footercopyright{
+  flex: 1;
+}
+.footerprivacy{
+  flex: 1;
+}
+@media screen and (max-width: 560px){
+  .footerbottom{
+    flex-direction: column;
+  }
+}

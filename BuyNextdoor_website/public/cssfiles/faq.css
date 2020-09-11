@@ -1,0 +1,98 @@
+@font-face{
+  src:url(../fonts/NexaFreeLightwebfont.ttf);
+  font-family: "Nexa Light";
+}
+body, html{
+  height: 100%;
+  margin: 0;
+  font-size:16px;
+  scroll-behavior: smooth;
+  font-family:"Nexa Light";
+  font-weight: 400;
+  line-height: 1.8em;
+  background-color: RGB(35,31,32);
+}
+
+.pimg1, .pimg2{
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /*
+  fixed=parallax
+  scroll=normal
+  */
+  /*for parallax*/
+  background-attachment: fixed;
+}
+section.section.section-dark{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+section.section.section-dark ul{
+  padding-left: 10px;
+}
+
+/*fixing the image*/
+.pimg1{
+  background-image: url('../photos/up.jpg');
+  min-height:100%;
+}
+/*fixing the image*/
+.pimg2{
+  background-image: url('../photos/down.jpg');
+  min-height:460px;
+}
+
+@media screen and (max-width:768px){
+  section.section.section-dark{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .pimg1,.pimg2{
+    background-attachment: scroll;
+  }
+}
+.section{
+  text-align: center;
+  padding:50px 80px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.ptext{
+  position: absolute;
+  top: 50%;
+  width:100%;
+  text-align: center;
+  color:#000;
+  font-size:20px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+ .border{
+  background-color: rgb(255,242,0);
+  padding:20px;
+}
+/*question*/
+#question{
+  text-align: center;
+  color:rgb(254,190,16);
+  list-style-type: none;
+  padding: 6px 2px;
+  font-size: 22px;
+  font-weight: bold;
+}
+/*formating li*/
+
+.answer li{
+  text-align: left;
+  color:rgb(255,255,255);
+  list-style: decimal;
+  padding:7px 2px;
+  font-size: 18px;
+
+}
